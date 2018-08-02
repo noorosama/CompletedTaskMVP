@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  MVPTask
+
+  Created by Admin user on 8/1/18.
+  Copyright © 2018 Nour Abukhaled. All rights reserved.
+*/
+//MARK: Buttons
+"Buttons.Submit" = "Submit";
+"Buttons.OK" = "OK";
+
+//MARK: Messages
+"Messages.EmptyDate" = "Date field is required";
+"Messages.EmptyCountry" = "Country field is required";
+"Message.EmptyCity" = "City field is required";
+"Message.EmptyEmail" = "Email field is required";
+"Message.InvalidEmail" = "Invalid email format";
+"Messages.Success" = "The registration has been submitted successfully";
+
+//MARK: Headers
+"Headers.Summary" = "Summary";
+"Headers.Location" = "Location";
+
+//MARK: Titles
+"Titles.Date" = "Date of birth";
+"Titles.Email" = "Email";
+"Titles.Country" = "Country";
+"Titles.City" = "City";
+

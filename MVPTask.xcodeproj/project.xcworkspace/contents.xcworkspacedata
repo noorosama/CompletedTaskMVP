@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:/Users/adminuser/Desktop/MVPTask/MVPTask/Models"
+      name = "Models">
+      <FileRef
+         location = "group:FormField.swift">
+      </FileRef>
+      <FileRef
+         location = "group:LocationItem.swift">
+      </FileRef>
+      <FileRef
+         location = "group:RegistrationData.swift">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "self:MVPTask.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
