@@ -36,7 +36,7 @@ struct Constants {
     struct  Identifier {
         static let mainCell = "mainTableViewCell"
         static let listCell = "listTableViewCell"
-        static let summaryCell = "SummaryCell"
+        static let summaryCell = "SummaryTableViewCell"
         static let header = "TableHeaderView"
         static let footer = "TableFooterView"
     }

@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 protocol MainRoutable {
-
+    
+    func showSummary(items: [String])
     func showList(items: [String])
  }
 
@@ -29,6 +30,17 @@ class MainRouter: MainRoutable {
         let controller = storyboard.instantiateViewController(withIdentifier: Constants.StoryboardID.list) as! ListViewController
         
         controller.configurator = ListConfigurator(items: items)
+        
+        viewController?.navigationController?.pushViewController(controller, animated: true)
+        
+    }
+    
+    func showSummary(items: [String]) {
+        
+        let storyboard = UIStoryboard(name: Constants.StoryboardName.summary, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: Constants.StoryboardID.summary) as! SummaryViewController
+        
+        controller.configurator = SummaryConfigurator(fields: items)
         
         viewController?.navigationController?.pushViewController(controller, animated: true)
         

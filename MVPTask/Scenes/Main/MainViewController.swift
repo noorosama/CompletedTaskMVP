@@ -48,8 +48,6 @@ extension MainViewController: MainPresenterOutput {
         presenter.configure(footer: footerView!)
     }
     
-    
-    
 }
 
 //MARK: - Configurations
@@ -90,7 +88,7 @@ extension MainViewController: UITableViewDataSource {
             
            self?.presenter.textFieldTapped(text: textField.text!, at: indexPath)
         }
-
+       
         cell.selectionStyle = .none
         
         return cell

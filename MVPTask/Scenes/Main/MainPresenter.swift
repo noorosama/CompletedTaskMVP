@@ -78,7 +78,7 @@ class MainPresenter: MainPresenterInput {
     
     func submitButtonTapped() {
         
-      //  router?.showSummary()
+        router?.showSummary(items: ["test", "test"])
     }
     
     func textFieldTapped(text: String, at indexPath: IndexPath) {

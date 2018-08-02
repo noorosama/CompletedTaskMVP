@@ -13,7 +13,7 @@
         <!--Summary View Controller-->
         <scene sceneID="nu7-Sj-SQC">
             <objects>
-                <viewController id="ga9-Ub-KgL" customClass="SummaryViewController" customModule="MVPTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SummaryViewController" id="ga9-Ub-KgL" customClass="SummaryViewController" customModule="MVPTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zzk-Oh-Y9T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

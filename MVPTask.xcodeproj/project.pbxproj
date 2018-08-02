@@ -14,7 +14,6 @@
 		1901E6A5211077F3001E8220 /* SummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E69E211077F3001E8220 /* SummaryItem.swift */; };
 		1901E6A6211077F3001E8220 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E69F211077F3001E8220 /* UITableViewExtensions.swift */; };
 		1901E6A7211077F3001E8220 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6A0211077F3001E8220 /* UIViewControllerExtensions.swift */; };
-		1901E6AE21108D1F001E8220 /* SummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6A921108D1F001E8220 /* SummaryCell.swift */; };
 		1901E6AF21108D1F001E8220 /* SummaryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6AA21108D1F001E8220 /* SummaryConfigurator.swift */; };
 		1901E6B021108D1F001E8220 /* SummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6AB21108D1F001E8220 /* SummaryPresenter.swift */; };
 		1901E6B121108D1F001E8220 /* SummaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6AC21108D1F001E8220 /* SummaryRouter.swift */; };
@@ -27,14 +26,14 @@
 		1901E6CD2111A76B001E8220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1901E6CF2111A76B001E8220 /* Localizable.strings */; };
 		1901E6D62111B9A8001E8220 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6D52111B9A8001E8220 /* FormField.swift */; };
 		1901E6D821122AD8001E8220 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6D721122AD8001E8220 /* RegistrationData.swift */; };
-		1901E6DA21122FEB001E8220 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6D921122FEB001E8220 /* ListViewController.swift */; };
-		1901E6DD21123023001E8220 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6DC21123023001E8220 /* ListPresenter.swift */; };
-		1901E6DF2112304F001E8220 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6DE2112304F001E8220 /* ListConfigurator.swift */; };
-		1901E6E12112306D001E8220 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6E02112306D001E8220 /* ListRouter.swift */; };
-		1901E6E621123129001E8220 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6E421123129001E8220 /* listTableViewCell.swift */; };
-		1901E6E721123129001E8220 /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1901E6E521123129001E8220 /* listTableViewCell.xib */; };
-		1901E6EC2112389F001E8220 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1901E6EB2112389F001E8220 /* List.storyboard */; };
 		1901E6F421125171001E8220 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6F321125171001E8220 /* LocationItem.swift */; };
+		1901E6FE211303AA001E8220 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1901E6F6211303A9001E8220 /* List.storyboard */; };
+		1901E6FF211303AA001E8220 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6F7211303A9001E8220 /* ListConfigurator.swift */; };
+		1901E700211303AA001E8220 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6F8211303A9001E8220 /* ListPresenter.swift */; };
+		1901E701211303AA001E8220 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6F9211303A9001E8220 /* ListRouter.swift */; };
+		1901E702211303AA001E8220 /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6FB211303A9001E8220 /* listTableViewCell.swift */; };
+		1901E703211303AA001E8220 /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1901E6FC211303A9001E8220 /* listTableViewCell.xib */; };
+		1901E704211303AA001E8220 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901E6FD211303A9001E8220 /* ListViewController.swift */; };
 		192B859E211066B6003301ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B859D211066B6003301ED /* AppDelegate.swift */; };
 		192B85A3211066B6003301ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192B85A1211066B6003301ED /* Main.storyboard */; };
 		192B85A5211066B6003301ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192B85A4211066B6003301ED /* Assets.xcassets */; };
@@ -47,6 +46,7 @@
 		192B85BD2110687F003301ED /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B85BC2110687F003301ED /* TableHeaderView.swift */; };
 		192B85BF21107425003301ED /* TableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B85BE21107425003301ED /* TableFooterView.swift */; };
 		192B85C121107432003301ED /* TableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 192B85C021107432003301ED /* TableFooterView.xib */; };
+		6C47E3BE308D8374D5F8A669 /* Pods_MVPTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E3C09949295CF8814D89BC /* Pods_MVPTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +57,6 @@
 		1901E69E211077F3001E8220 /* SummaryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryItem.swift; sourceTree = "<group>"; };
 		1901E69F211077F3001E8220 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		1901E6A0211077F3001E8220 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		1901E6A921108D1F001E8220 /* SummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCell.swift; sourceTree = "<group>"; };
 		1901E6AA21108D1F001E8220 /* SummaryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryConfigurator.swift; sourceTree = "<group>"; };
 		1901E6AB21108D1F001E8220 /* SummaryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryPresenter.swift; sourceTree = "<group>"; };
 		1901E6AC21108D1F001E8220 /* SummaryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryRouter.swift; sourceTree = "<group>"; };
@@ -73,14 +72,14 @@
 		1901E6D32111A85A001E8220 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1901E6D52111B9A8001E8220 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		1901E6D721122AD8001E8220 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
-		1901E6D921122FEB001E8220 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		1901E6DC21123023001E8220 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		1901E6DE2112304F001E8220 /* ListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
-		1901E6E02112306D001E8220 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		1901E6E421123129001E8220 /* listTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
-		1901E6E521123129001E8220 /* listTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
-		1901E6EB2112389F001E8220 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		1901E6F321125171001E8220 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		1901E6F6211303A9001E8220 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		1901E6F7211303A9001E8220 /* ListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
+		1901E6F8211303A9001E8220 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		1901E6F9211303A9001E8220 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		1901E6FB211303A9001E8220 /* listTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
+		1901E6FC211303A9001E8220 /* listTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
+		1901E6FD211303A9001E8220 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		192B859A211066B6003301ED /* MVPTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		192B859D211066B6003301ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		192B85A2211066B6003301ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +94,9 @@
 		192B85BC2110687F003301ED /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		192B85BE21107425003301ED /* TableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterView.swift; sourceTree = "<group>"; };
 		192B85C021107432003301ED /* TableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableFooterView.xib; sourceTree = "<group>"; };
+		4A652AC32392AC7249A01ECE /* Pods-MVPTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVPTask/Pods-MVPTask.release.xcconfig"; sourceTree = "<group>"; };
+		51E3C09949295CF8814D89BC /* Pods_MVPTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVPTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE6DD8E178D0B3423BE3765 /* Pods-MVPTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVPTask/Pods-MVPTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C47E3BE308D8374D5F8A669 /* Pods_MVPTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +144,6 @@
 		1901E6A821108D1F001E8220 /* Summary */ = {
 			isa = PBXGroup;
 			children = (
-				1901E6A921108D1F001E8220 /* SummaryCell.swift */,
 				1901E6AA21108D1F001E8220 /* SummaryConfigurator.swift */,
 				1901E6AB21108D1F001E8220 /* SummaryPresenter.swift */,
 				1901E6AC21108D1F001E8220 /* SummaryRouter.swift */,
@@ -188,25 +190,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1901E6DB21122FF1001E8220 /* List */ = {
+		1901E6F5211303A9001E8220 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				1901E6DC21123023001E8220 /* ListPresenter.swift */,
-				1901E6DE2112304F001E8220 /* ListConfigurator.swift */,
-				1901E6D921122FEB001E8220 /* ListViewController.swift */,
-				1901E6E02112306D001E8220 /* ListRouter.swift */,
-				1901E6EB2112389F001E8220 /* List.storyboard */,
-				1901E6E82112313C001E8220 /* listTableViewCell */,
+				1901E6F6211303A9001E8220 /* List.storyboard */,
+				1901E6F7211303A9001E8220 /* ListConfigurator.swift */,
+				1901E6F8211303A9001E8220 /* ListPresenter.swift */,
+				1901E6FD211303A9001E8220 /* ListViewController.swift */,
+				1901E6F9211303A9001E8220 /* ListRouter.swift */,
+				1901E6FA211303A9001E8220 /* listTableViewCell */,
 			);
-			name = List;
-			path = Main/List;
+			path = List;
 			sourceTree = "<group>";
 		};
-		1901E6E82112313C001E8220 /* listTableViewCell */ = {
+		1901E6FA211303A9001E8220 /* listTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				1901E6E421123129001E8220 /* listTableViewCell.swift */,
-				1901E6E521123129001E8220 /* listTableViewCell.xib */,
+				1901E6FB211303A9001E8220 /* listTableViewCell.swift */,
+				1901E6FC211303A9001E8220 /* listTableViewCell.xib */,
 			);
 			path = listTableViewCell;
 			sourceTree = "<group>";
@@ -216,6 +217,8 @@
 			children = (
 				192B859C211066B6003301ED /* MVPTask */,
 				192B859B211066B6003301ED /* Products */,
+				D2A3CA84A01D258CC7F24412 /* Pods */,
+				C25B7F8D4A218CA136FE7590 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,8 +248,8 @@
 		192B85B7211066FD003301ED /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1901E6F5211303A9001E8220 /* List */,
 				192B85B821106713003301ED /* Main */,
-				1901E6DB21122FF1001E8220 /* List */,
 				1901E6A821108D1F001E8220 /* Summary */,
 			);
 			path = Scenes;
@@ -285,6 +288,23 @@
 			path = TableFooterView;
 			sourceTree = "<group>";
 		};
+		C25B7F8D4A218CA136FE7590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51E3C09949295CF8814D89BC /* Pods_MVPTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2A3CA84A01D258CC7F24412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FE6DD8E178D0B3423BE3765 /* Pods-MVPTask.debug.xcconfig */,
+				4A652AC32392AC7249A01ECE /* Pods-MVPTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,9 +312,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 192B85AC211066B6003301ED /* Build configuration list for PBXNativeTarget "MVPTask" */;
 			buildPhases = (
+				19E24276FC546D1033FB0F0F /* [CP] Check Pods Manifest.lock */,
 				192B8596211066B6003301ED /* Sources */,
 				192B8597211066B6003301ED /* Frameworks */,
 				192B8598211066B6003301ED /* Resources */,
+				322F240217A6E6764AE458D3 /* [CP] Embed Pods Frameworks */,
+				9F8F138CDAC2868DA4582010 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,51 +370,104 @@
 			files = (
 				192B85BA21106869003301ED /* TableHeaderView.xib in Resources */,
 				192B85A8211066B6003301ED /* LaunchScreen.storyboard in Resources */,
-				1901E6E721123129001E8220 /* listTableViewCell.xib in Resources */,
 				1901E6BE2110938D001E8220 /* SummaryTableViewCell.xib in Resources */,
 				192B85A5211066B6003301ED /* Assets.xcassets in Resources */,
 				1901E6CD2111A76B001E8220 /* Localizable.strings in Resources */,
 				192B85C121107432003301ED /* TableFooterView.xib in Resources */,
 				192B85A3211066B6003301ED /* Main.storyboard in Resources */,
-				1901E6EC2112389F001E8220 /* List.storyboard in Resources */,
+				1901E703211303AA001E8220 /* listTableViewCell.xib in Resources */,
 				1901E6C621118A35001E8220 /* mainTableViewCell.xib in Resources */,
+				1901E6FE211303AA001E8220 /* List.storyboard in Resources */,
 				1901E6B9211092AC001E8220 /* SummaryViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19E24276FC546D1033FB0F0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVPTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		322F240217A6E6764AE458D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVPTask/Pods-MVPTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVPTask/Pods-MVPTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8F138CDAC2868DA4582010 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVPTask/Pods-MVPTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		192B8596211066B6003301ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1901E6E12112306D001E8220 /* ListRouter.swift in Sources */,
-				1901E6DD21123023001E8220 /* ListPresenter.swift in Sources */,
+				1901E704211303AA001E8220 /* ListViewController.swift in Sources */,
 				1901E6B021108D1F001E8220 /* SummaryPresenter.swift in Sources */,
+				1901E700211303AA001E8220 /* ListPresenter.swift in Sources */,
 				1901E6A2211077F3001E8220 /* LocalizationKeys.swift in Sources */,
 				1901E6D62111B9A8001E8220 /* FormField.swift in Sources */,
 				1901E6B221108D1F001E8220 /* SummaryViewController.swift in Sources */,
 				1901E6A3211077F3001E8220 /* DateExtensions.swift in Sources */,
+				1901E701211303AA001E8220 /* ListRouter.swift in Sources */,
 				192B85BD2110687F003301ED /* TableHeaderView.swift in Sources */,
 				1901E6A6211077F3001E8220 /* UITableViewExtensions.swift in Sources */,
-				1901E6AE21108D1F001E8220 /* SummaryCell.swift in Sources */,
 				1901E6AF21108D1F001E8220 /* SummaryConfigurator.swift in Sources */,
 				192B85BF21107425003301ED /* TableFooterView.swift in Sources */,
 				192B85B6211066E8003301ED /* MainPresenter.swift in Sources */,
 				1901E6A7211077F3001E8220 /* UIViewControllerExtensions.swift in Sources */,
 				1901E6A1211077F3001E8220 /* Constant.swift in Sources */,
 				1901E6A4211077F3001E8220 /* StringExtensions.swift in Sources */,
-				1901E6DA21122FEB001E8220 /* ListViewController.swift in Sources */,
-				1901E6E621123129001E8220 /* listTableViewCell.swift in Sources */,
 				192B859E211066B6003301ED /* AppDelegate.swift in Sources */,
 				1901E6B121108D1F001E8220 /* SummaryRouter.swift in Sources */,
 				1901E6F421125171001E8220 /* LocationItem.swift in Sources */,
 				1901E6C521118A35001E8220 /* mainTableViewCell.swift in Sources */,
+				1901E702211303AA001E8220 /* listTableViewCell.swift in Sources */,
 				192B85B3211066E8003301ED /* MainRouter.swift in Sources */,
 				1901E6D821122AD8001E8220 /* RegistrationData.swift in Sources */,
+				1901E6FF211303AA001E8220 /* ListConfigurator.swift in Sources */,
 				1901E6A5211077F3001E8220 /* SummaryItem.swift in Sources */,
-				1901E6DF2112304F001E8220 /* ListConfigurator.swift in Sources */,
 				192B85B4211066E8003301ED /* MainViewController.swift in Sources */,
 				1901E6BB2110935F001E8220 /* SummaryTableViewCell.swift in Sources */,
 				192B85B5211066E8003301ED /* MainConfigurator.swift in Sources */,
@@ -542,6 +618,7 @@
 		};
 		192B85AD211066B6003301ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE6DD8E178D0B3423BE3765 /* Pods-MVPTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +633,7 @@
 		};
 		192B85AE211066B6003301ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A652AC32392AC7249A01ECE /* Pods-MVPTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

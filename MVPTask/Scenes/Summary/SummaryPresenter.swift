@@ -12,14 +12,13 @@ protocol SummaryPresenterInput {
     
     func viewDidLoad()
     func configure(cell: SummaryCellPresentable, at indexPath: IndexPath)
+    func configure(header: TableHeaderPresentable)
     func numberOfRows() -> Int
-    func backButtonTapped()
 }
 
 protocol SummaryPresenterOutput: class {
     
-    func displayScreenTitle(title: String)
-    func displayTitleLabel(title: String)
+    
 }
 
 class SummaryPresenter: SummaryPresenterInput {
@@ -43,20 +42,21 @@ class SummaryPresenter: SummaryPresenterInput {
     
     func viewDidLoad() {
         
-        output?.displayScreenTitle(title: "Summary")
-        output?.displayTitleLabel(title: "Back")
+       
+      
     }
     
     func configure(cell: SummaryCellPresentable, at indexPath: IndexPath) {
         
         let item = fields[indexPath.row]
-        cell.displayLabel(text: item)
+        cell.displayDescription(text: item)
+        cell.displayValue(text: item)
+        
     }
     
-    func backButtonTapped() {
+    func configure(header: TableHeaderPresentable) {
         
-      router?.backToLogin()
-        
+        header.displayHeader(text: LocalizationKeys.Headers.main.localized)
     }
     
 }

@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+protocol SummaryCellPresentable {
+    
+    func displayDescription(text: String)
+    func displayValue(text: String)
+    
+}
+
 class SummaryTableViewCell: UITableViewCell {
     
     //MARK: Outlets
@@ -20,7 +27,7 @@ class SummaryTableViewCell: UITableViewCell {
 
 //MARK: - Helper Methods
 
-extension SummaryTableViewCell {
+extension SummaryTableViewCell: SummaryCellPresentable {
     
     func displayDescription(text: String) {
         
@@ -35,3 +42,6 @@ extension SummaryTableViewCell {
     }
     
 }
+
+
+

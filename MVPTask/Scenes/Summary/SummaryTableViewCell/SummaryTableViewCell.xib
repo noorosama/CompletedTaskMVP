@@ -6,54 +6,48 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SummaryTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="401" height="80"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVt-xs-ycc">
-                    <rect key="frame" x="20" y="13" width="361" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-gg-vpE">
-                    <rect key="frame" x="20" y="42" width="361" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rVt-xs-ycc" secondAttribute="trailing" constant="20" id="8Uu-Az-k5c"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lXD-gg-vpE" secondAttribute="trailing" constant="20" id="Abb-f0-ftu"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lXD-gg-vpE" secondAttribute="bottom" constant="17" id="B29-Iy-O9A"/>
-                <constraint firstItem="lXD-gg-vpE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Nuv-Js-mab"/>
-                <constraint firstItem="rVt-xs-ycc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="UsE-cR-tBm"/>
-                <constraint firstItem="rVt-xs-ycc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Z1L-zk-9Hq"/>
-                <constraint firstItem="lXD-gg-vpE" firstAttribute="top" secondItem="rVt-xs-ycc" secondAttribute="bottom" constant="8" id="hir-he-Hvk"/>
-            </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SummaryTableViewCell" rowHeight="86" id="O7g-Ij-6AS" customClass="SummaryTableViewCell" customModule="MVPTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O7g-Ij-6AS" id="VC4-tF-PZh">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YSr-yL-Beb">
+                        <rect key="frame" x="10" y="10" width="355" height="65.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVt-xs-ycc">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-gg-vpE">
+                                <rect key="frame" x="0.0" y="33" width="355" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YSr-yL-Beb" secondAttribute="bottom" constant="10" id="DQs-we-liJ"/>
+                    <constraint firstItem="YSr-yL-Beb" firstAttribute="leading" secondItem="VC4-tF-PZh" secondAttribute="leading" constant="10" id="DTv-Wv-imc"/>
+                    <constraint firstAttribute="trailing" secondItem="YSr-yL-Beb" secondAttribute="trailing" constant="10" id="Nhh-IN-hqm"/>
+                    <constraint firstItem="YSr-yL-Beb" firstAttribute="top" secondItem="VC4-tF-PZh" secondAttribute="top" constant="10" id="sYV-uq-UEh"/>
+                </constraints>
+            </tableViewCellContentView>
             <connections>
-                <outlet property="descriptionLabel" destination="rVt-xs-ycc" id="eRX-c1-nqL"/>
-                <outlet property="valueLabel" destination="lXD-gg-vpE" id="Hvf-G9-HIt"/>
+                <outlet property="descriptionLabel" destination="rVt-xs-ycc" id="siA-zr-gJR"/>
+                <outlet property="valueLabel" destination="lXD-gg-vpE" id="8W0-EF-88f"/>
             </connections>
-            <point key="canvasLocation" x="37.5" y="30"/>
-        </view>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o6W-Dz-AIK">
-            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <nil key="textColor"/>
-            <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="299" y="156"/>
-        </label>
+            <point key="canvasLocation" x="33.5" y="231"/>
+        </tableViewCell>
     </objects>
 </document>

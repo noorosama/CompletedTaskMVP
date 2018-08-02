@@ -12,36 +12,63 @@ import UIKit
 class SummaryViewController: UIViewController {
     
     
-    //   MARK: Outlet
+    //MARK: Outlet
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var titleButton: UIButton!
     
     
-    //    MARK: Variables
+    // MARK: Variables
     
+    var configurator: SummaryConfigurable!
     var presenter: SummaryPresenterInput!
-    var configurator: SummaryConfigurable?
     
-    //    MARK: View LifeCycle
+    //MARK: View LifeCycle
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        configurator?.configure(summaryViewController: self)
-        presenter.viewDidLoad()
+        configurator.configure(summaryViewController: self)
+        configurSummaryTableView()
+       
     }
 }
 
-//MARK: - Actions
+//MARK: - Configurations
 
 extension SummaryViewController {
     
-    @IBAction func backButtonTapped(_ sender: UIButton) {
+    func configurSummaryTableView() {
         
-        presenter.backButtonTapped()
+        let summaryXib = UINib(nibName: Constants.NibName.summaryCell, bundle: nil)
+        tableView.register(summaryXib, forCellReuseIdentifier: Constants.Identifier.summaryCell)
+        
+        let summaryHeaderXib = UINib(nibName: Constants.NibName.header, bundle: nil)
+        tableView.register(summaryHeaderXib, forHeaderFooterViewReuseIdentifier: Constants.Identifier.header)
         
     }
 }
+
+//MARK: - UITableViewDelegate
+
+extension SummaryViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let summaryHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: Constants.Identifier.header) as! TableHeaderView
+        
+        presenter.configure(header: summaryHeaderView)
+        
+        return summaryHeaderView
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return 50
+    }
+    
+}
+
+
 
 //MARK: - UITableViewDataSoruce
 
@@ -55,11 +82,14 @@ extension SummaryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SummaryCell", for: indexPath) as! SummaryCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Identifier.summaryCell, for: indexPath) as! SummaryTableViewCell
         
         cell.selectionStyle = .none
         
         presenter.configure(cell: cell, at: indexPath)
+        
+        cell.displayDescription(text: "noor")
+        cell.displayValue(text: "IOS")
         
         return cell
         
@@ -70,18 +100,6 @@ extension SummaryViewController: UITableViewDataSource {
 //MARK: - SummaryPresenterOutput
 
 extension SummaryViewController: SummaryPresenterOutput {
-    
-    func displayTitleLabel(title: String) {
-        
-       titleButton.setTitle(title, for: .normal)
-    }
-    
-    func displayScreenTitle(title: String) {
-      
-        self.title = title
-        
-    }
-    
     
     
 }
