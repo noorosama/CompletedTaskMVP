@@ -15,7 +15,7 @@ protocol mainCellPresentable {
     func displayTextFieldPlaceholder(placeholder: String)
     func setKeyboardType(keyboardType: UIKeyboardType)
     func textFieldDidEndEditing(_ textField: UITextField)
-    
+    func shouldBeginEditingEnabled(_ enabled: Bool) 
     
 }
 
@@ -63,7 +63,6 @@ extension mainTableViewCell: mainCellPresentable {
 extension mainTableViewCell: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
         handler?(textField, .begingEditing)
         return shouldBeginEditing
     }

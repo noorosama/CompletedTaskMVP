@@ -61,7 +61,15 @@ class MainPresenter: MainPresenterInput {
         
         let field = fields[indexPath.row]
         
-       cell.displayTextFieldPlaceholder(placeholder: field.placeholder)
+        cell.displayTextFieldPlaceholder(placeholder: field.placeholder)
+        
+        if let keyboardType = field.keyboardType {
+            cell.setKeyboardType(keyboardType: keyboardType)
+        }
+        
+        cell.shouldBeginEditingEnabled(field.shouldBeginEditing)
+        
+        
     }
     
     func configure(header: TableHeaderPresentable) {
@@ -90,10 +98,21 @@ class MainPresenter: MainPresenterInput {
     }
     
     func textFieldTapped(text: String, at indexPath: IndexPath) {
-
-        router?.showList(items: ["County0","County1","County2","County3","County4","County5","County6","County7"])
+        let field = fields[indexPath.row]
+        print(field)
         
-        }
+//        router?.showList(items: [
+//            "County0",
+//            "County1",
+//            "County2",
+//            "County3",
+//            "County4",
+//            "County5",
+//            "County6",
+//            "County7"
+//        ])
+        
+    }
    
     func textFieldDidEndEditing(text: String,_ field: FormField) {
         
