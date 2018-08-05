@@ -6,7 +6,8 @@
 //  Copyright © 2018 Nour Abukhaled. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import IQKeyboardManagerSwift
 
 protocol MainPresenterInput {
     
@@ -23,7 +24,8 @@ protocol MainPresenterInput {
 
 protocol MainPresenterOutput: class {
     
-   func createFooterView()    
+   func createFooterView()
+   func displayAlert(message: String, completion: (() -> Void)?)
     
 }
 
@@ -47,8 +49,6 @@ class MainPresenter: MainPresenterInput {
     }
     
     func viewDidLoad() {
-        
-    
         
     }
     
@@ -78,20 +78,62 @@ class MainPresenter: MainPresenterInput {
     
     func submitButtonTapped() {
         
-        router?.showSummary(items: ["test", "test"])
+        let validationResult = validate(registrationData: registrationData)
+        
+        switch validationResult {
+        case .valid(_):
+            router?.showSummary(items: ["test", "test"])
+        case .invalid(let errorMessage):
+            output?.displayAlert(message: errorMessage, completion: nil)
+        }
+
     }
     
     func textFieldTapped(text: String, at indexPath: IndexPath) {
-        
+
         router?.showList(items: ["County0","County1","County2","County3","County4","County5","County6","County7"])
         
         }
    
-    func textFieldDidEndEditing(text: String,_ field: FormField){
+    func textFieldDidEndEditing(text: String,_ field: FormField) {
         
         registrationData.email = text
     }
   
+}
+
+//MARK: - Validation
+private extension MainPresenter {
+    
+    func validate(registrationData: RegistrationData) -> validateResult  {
+        
+        if registrationData.date.isEmpty {
+            
+            return .invalid(LocalizationKeys.Messages.emptyDateFieldMessage.localized)
+            
+        } else if registrationData.countryItem.isEmpty {
+            
+            return .invalid(LocalizationKeys.Messages.emptyCountryFieldMessage.localized)
+            
+        } else if registrationData.cityItem.isEmpty {
+            
+            return .invalid(LocalizationKeys.Messages.emptyCityFieldMessage.localized)
+            
+        } else if registrationData.email.isEmpty {
+            
+            return .invalid(LocalizationKeys.Messages.emptyEmailFieldMessage.localized)
+            
+        } else if !(registrationData.email.validateEmail(enteredEmail: registrationData.email)) {
+            
+            return .invalid(LocalizationKeys.Messages.invlidEmailFieldMessage.localized)
+            
+        } else {
+            
+            return .valid(LocalizationKeys.Messages.successMessage.localized)
+        }
+        
+    }
+
 }
 
 

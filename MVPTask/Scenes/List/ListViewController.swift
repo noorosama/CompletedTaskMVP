@@ -23,7 +23,7 @@ class ListViewController: UIViewController {
        super.viewDidLoad()
        configurator?.configure(listViewController: self)
        configurListTableView()
-        presenter?.viewDidLoad()
+       presenter?.viewDidLoad()
         
     }
         

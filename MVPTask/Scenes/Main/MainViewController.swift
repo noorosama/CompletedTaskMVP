@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     //MARK: Properties
     var configurator: MainConfigurable?
     var presenter: MainPresenterInput!
-    
+    var registrationData = RegistrationData()
     private let datePicker = UIDatePicker()
 
     //MARK: ViewLife Cycle
@@ -36,6 +36,12 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainPresenterOutput {
     
+    func displayAlert(message: String, completion: (() -> Void)?) {
+        
+       showAlert(message: message, handler: completion)
+    }
+    
+    
     func createFooterView() {
         
       let footerView = tableView.createFooterView()
@@ -43,10 +49,12 @@ extension MainViewController: MainPresenterOutput {
         footerView?.tapHandler = { [weak self] in
             
             self?.presenter.submitButtonTapped()
+            
         }
         
         presenter.configure(footer: footerView!)
     }
+   
     
 }
 
@@ -87,6 +95,8 @@ extension MainViewController: UITableViewDataSource {
         cell.handler = { [weak self] textField, eventType in
             
            self?.presenter.textFieldTapped(text: textField.text!, at: indexPath)
+            
+            
         }
        
         cell.selectionStyle = .none

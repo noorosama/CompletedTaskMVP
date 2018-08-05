@@ -193,11 +193,11 @@
 		1901E6F5211303A9001E8220 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				1901E6F6211303A9001E8220 /* List.storyboard */,
 				1901E6F7211303A9001E8220 /* ListConfigurator.swift */,
 				1901E6F8211303A9001E8220 /* ListPresenter.swift */,
 				1901E6FD211303A9001E8220 /* ListViewController.swift */,
 				1901E6F9211303A9001E8220 /* ListRouter.swift */,
+				1901E6F6211303A9001E8220 /* List.storyboard */,
 				1901E6FA211303A9001E8220 /* listTableViewCell */,
 			);
 			path = List;

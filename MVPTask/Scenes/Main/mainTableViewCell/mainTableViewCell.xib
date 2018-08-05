@@ -24,9 +24,6 @@
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <action selector="textFieldTapped:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="fw1-bH-WBp"/>
-                        </connections>
                     </textField>
                 </subviews>
                 <constraints>

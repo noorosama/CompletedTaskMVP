@@ -21,7 +21,7 @@ struct Constants {
     
     
     struct StoryboardID {
-        static let main = "Main"
+        static let main = "MainViewController"
         static let list = "ListViewController"
         static let summary = "SummaryViewController"
     }

@@ -33,7 +33,7 @@ class mainTableViewCell: UITableViewCell {
         case endEditing
         case begingEditing
     }
-
+    private var shouldBeginEditing = true
     var handler: ((UITextField, EventType) -> Void)?
 
 }
@@ -53,17 +53,24 @@ extension mainTableViewCell: mainCellPresentable {
         textField.keyboardType = keyboardType
     }
     
+    func shouldBeginEditingEnabled(_ enabled: Bool) {
+        shouldBeginEditing = enabled
+    }
+    
 }
 
 //MARK: - UITextFieldDelegate
 extension mainTableViewCell: UITextFieldDelegate {
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
         handler?(textField, .begingEditing)
+        return shouldBeginEditing
     }
     
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        handler?(textField, .endEditing)
+//        handler?(textField, .endEditing)
     }
 
 }

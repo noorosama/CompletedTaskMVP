@@ -13,6 +13,7 @@ protocol MainRoutable {
     
     func showSummary(items: [String])
     func showList(items: [String])
+    
  }
 
 class MainRouter: MainRoutable {
@@ -32,6 +33,7 @@ class MainRouter: MainRoutable {
         controller.configurator = ListConfigurator(items: items)
         
         viewController?.navigationController?.pushViewController(controller, animated: true)
+        
         
     }
     

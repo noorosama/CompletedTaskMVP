@@ -28,11 +28,12 @@ class ListPresenter: ListPresenterInput {
     let items: [String]
     var router: ListRoutable?
     
-    init(output: ListPresenterOutput,items: [String], router: ListRoutable ) {
+    init(output: ListPresenterOutput,items: [String],router: ListRoutable) {
         
         self.output = output
-        self.items = items
         self.router = router
+        self.items = items
+       
     }
     
     func viewDidLoad() {
