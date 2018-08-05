@@ -99,18 +99,24 @@ class MainPresenter: MainPresenterInput {
     
     func textFieldTapped(text: String, at indexPath: IndexPath) {
         let field = fields[indexPath.row]
-        print(field)
         
-//        router?.showList(items: [
-//            "County0",
-//            "County1",
-//            "County2",
-//            "County3",
-//            "County4",
-//            "County5",
-//            "County6",
-//            "County7"
-//        ])
+        switch field {
+        case .country:
+            router?.showList(items: [
+                "County0",
+                "County1",
+                "County2",
+                "County3",
+                "County4",
+                "County5",
+                "County6",
+                "County7"
+                ])
+        default: break
+            
+        }
+        
+        
         
     }
    
